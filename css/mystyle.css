@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
+.text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#id3 p,.heading {
+    font-family: 'Righteous', cursive;
+    background: url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 9vmax;
+    letter-spacing: 10px;
+    background-size: cover;
+    margin: 0px;
+    color: transparent;
+}
+
+p {
+    font-family: 'Caveat', cursive;
+    color: transparent;
+    font-size: 5vmax;
+    letter-spacing: 5px;
+    margin: 0px;
+    background: linear-gradient(to right, #c4c4c4, #6a6a6a);
+    -webkit-background-clip: text;
+
+}
+
+/*---------------------------------------*/
+
+body {
+    background-color: black;
+}
+
+@media screen and (max-width:800px) {
+
+    body:hover #id1 p:nth-child(2),
+    body:hover #id2 p:nth-child(2),
+    body:hover #id3 p:nth-child(2) {
+        transition: all 1s;
+        display: block;
+    }
+
+    body:hover #id1 p:nth-child(1),
+    body:hover #id2 p:nth-child(1),
+    body:hover #id3 p:nth-child(1) {
+        display: none;
+    }
+
+    .text {
+        font-size: 15vmin;
+    }
+
+    .fixedtext {
+        top: 10vmax;
+        right: 1vmax;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+
+    .text {
+        font-size: 10vmin;
+    }
+
+    #id1:hover p:nth-child(1),
+    #id2:hover p:nth-child(1),
+    #id3:hover p:nth-child(1) {
+        display: none;
+    }
+
+    #id1:hover p:nth-child(2),
+    #id2:hover p:nth-child(2),
+    #id3:hover p:nth-child(2) {
+        display: block;
+
+    }
+
+    .fixedtext {
+        top: 10vmax;
+        right: 5vmax;
+    }
+
+}
+
+
+#id1 {
+    color: white;
+
+}
+
+#id2 {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+#id1 a{
+    color: white;
+}
+
+.item {
+    transition: 1s;
+}
+
+.item:hover {
+    transition: 0.5s;
+    padding-left: 3rem;
+
+}
+
+#id1 p:nth-child(2),
+#id2 p:nth-child(2),
+#id3 p:nth-child(2) {
+    display: none;
+}
+
+#id1,
+#id2,
+#id3 {
+    animation: textshadow 2s infinite;
+
+    transform: translatez(20);
+}
+
+
+

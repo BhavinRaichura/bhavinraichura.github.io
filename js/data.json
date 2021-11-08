@@ -1,0 +1,52 @@
+[
+    {
+        "title":"Education",
+        "val":[
+            {
+                "name":"B.Tech. in Biomedical Engineering | NATIONAL INSTITUTE OF TECHNOLOGY RAIPUR, India",
+                "status":"Start: July 2019 | End: Running"
+            },
+            {   
+                "name":"12th  | M. R. Sapre Hr. N N Sec. School, Raipur, CG, India",
+                "status":"Start: June 2017 | End: May 2018"
+            },
+            {
+                "name":"10th | M. R. Sapre Hr. N N Sec. School, Raipur, CG, India",
+                "status":"Start: June 2015 | End: May 2016"
+            }
+        ]
+        
+    },
+    
+    {
+        "title":"Certificates",
+        "val":[
+            "Web Development with Flask | LinkedIn",
+            "Introduction to JavaScript | Great Learning",
+            "Programming with Python | Internshala"
+        ]
+    },
+
+    {
+        "title":"Experience",
+        "val":["Web Development Intern | 1stop.ai | Period : 3 months"]
+    },
+
+    {
+        "title":"Technical Skills",
+        "val":[
+            "<span class='iconify' data-icon='vscode-icons:file-type-python'></span></i> Python",
+            "<span class='iconify' data-icon='logos:c-plusplus'></span> C++",
+            "<span class='iconify' data-icon='vscode-icons:file-type-html'></span> HTML",
+            "<span class='iconify' data-icon='vscode-icons:file-type-css'></span> CSS",
+            "<span class='iconify' data-icon='logos:javascript'></span> Javascript",
+            "<span class='iconify' data-icon='simple-icons:flask'></span> Flask",
+            "<span class='iconify' data-icon='logos:sqlite'></span> SQLite",
+            "<span class='iconify' data-icon='vscode-icons:file-type-light-json'></span> JSON",
+            "<span class='iconify' data-icon='vscode-icons:folder-type-mongodb'></span> MongoDB",
+            "<span class='iconify' data-icon='carbon:data-structured'></span> Data Structure"
+        ]
+    }
+
+    
+]
