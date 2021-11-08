@@ -118,7 +118,7 @@
         form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thanks for Feedback..."))
+            .then(response => alert("Thanks "+fname.value+", I will contact you in some time..."))
             .catch(error => console.error('Error!', error.message))
         })
 
