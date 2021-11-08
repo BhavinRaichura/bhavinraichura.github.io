@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Bhavin</title>
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/contform.css">
+    <style>
+        .main{
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="main" onclick="myFunction()">
+        <div class="heading">Get In Touch
+        </div>
+        <hr>
+        <section id="contact">
+            <div class="contact-wrapper">
+
+                <form id="contact-form" class="form-horizontal" role="form" name='submit-feedback'>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="fname" placeholder="Name" name="fname" value=""
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" id="email" placeholder="your@email.com"
+                                name="email" value="" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="tel" class="form-control" id="mobile" placeholder="Contact Number"
+                                name="mobile" value="" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <textarea class="form-control" rows="10" placeholder="Starting writing from here..."
+                                name="subject" id='subject' required></textarea>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="submit">
+                        
+                        <div class="alt-send-button">
+                            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                        </div>
+
+                    </button>
+                </form>
+
+
+                <div class="direct-contact-container">
+                    <ul class="contact-list">
+                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Raipur,
+                                    CG</span></i></li>
+
+                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                                        href="tel:1-212-555-5555" title="Give me a call">8085129146</a></span></i>
+                        </li>
+
+                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                                        href="mailto:#" title="Send me an email">mymail@gmail.com</a></span></i></li>
+                    </ul>
+
+                    <hr>
+
+                    <ul class="social-media-list">
+                        <a href="https://github.com/BhavinRaichura" target="_blank" class="contact-icon">
+                            <li>
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </li>
+                        </a>
+                        <a href="https://codier.io/@bhavinraichura" target="_blank" class="contact-icon">
+                            <li>
+                                <i class="fa fa-codepen" aria-hidden="true"></i>
+                            </li>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/bhavin-raichura-93a657191" target="_blank"
+                            class="contact-icon">
+                            <li>
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </li>
+                        </a>
+                    </ul>
+
+                    <hr>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="js/navigator.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwXLT3O2GddNR4gam0H-M2BUy5bqM072pxtZ18wUm3Ee-x66NcoyQ_yOLyGkfjImI9jtA/exec'
+        const form = document.forms['submit-feedback']
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Feedback..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+</body>
+
+</html>
