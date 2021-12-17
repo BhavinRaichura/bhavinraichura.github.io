@@ -149,7 +149,7 @@
                 
                 for(i=0; i<data.length;i++){
                     values =""
-                    if(data[i].title=="Education"){
+                    if(data[i].title=="Education" || data[i].title=="Projects"){
                             for(j=0;j<(data[i].val).length;j++){
                             values+="<li>"+data[i].val[j].name+"<br>"+data[i].val[j].status+"</li>"
                         };

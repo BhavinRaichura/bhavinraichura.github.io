@@ -31,6 +31,15 @@
         "title":"Experience",
         "val":["Web Development Intern | 1stop.ai | Period : 3 months"]
     },
+    {
+        "title":"Projects",
+        "val":[
+            {
+                "name":"Math Tree",
+                "status":"It is a web application that helps you to solve problems based on numerical methods. This includes the Bisection method, the Newton Raphson method, and the false position method.<br>Link: <a herf='https://math-tree.herokuapp.com/'>math-tree</a>"
+            }
+        ]
+    },
 
     {
         "title":"Technical Skills",
