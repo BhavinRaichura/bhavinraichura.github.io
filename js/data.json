@@ -33,12 +33,7 @@
     },
     {
         "title":"Projects",
-        "val":[
-            {
-                "name":"Math Tree",
-                "status":"It is a web application that helps you to solve problems based on numerical methods. This includes the Bisection method, the Newton Raphson method, and the false position method.<br>Link: <a herf='https://math-tree.herokuapp.com/'>math-tree</a>"
-            }
-        ]
+        "val":["<h3>Math Tree</h3>It is a web application that helps you to solve problems based on numerical methods. This includes the Bisection method, the Newton Raphson method, and the false position method.<br>Link: <a herf='https://math-tree.herokuapp.com/'>math-tree</a>"]
     },
 
     {
