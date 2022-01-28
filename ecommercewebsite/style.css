@@ -222,11 +222,6 @@
     text-align: center;
     
 }
-@media screen and(max-width:600px){
-    #products .product_container{
-        display:block;
-        
-}
 
 #products .product_container .item{
     width:20%;
@@ -564,7 +559,7 @@ iframe{
     padding: 20px;
 }
 #blogImg{
-    width:300px;
+    width:30%;
 }
 #blogImg img{
     width: 100%;
