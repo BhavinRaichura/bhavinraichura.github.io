@@ -543,7 +543,8 @@ iframe{
 }
 .fullitems{
     display: flex;
-    margin:20px
+    margin:20px;
+    flex-wrap:wrap-reverse;
 }
 
 .superfont{
@@ -563,7 +564,7 @@ iframe{
     padding: 20px;
 }
 #blogImg{
-    width:30%;
+    width:300px;
 }
 #blogImg img{
     width: 100%;
@@ -577,7 +578,7 @@ iframe{
     font-style: oblique;
 }
 #blogDetails{
-    width:70%;
+    width:400px;
 }
 #blogContent{
     text-align: center;
