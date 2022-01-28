@@ -222,14 +222,12 @@
     text-align: center;
     
 }
-
 #products .product_container .item{
-    width:20%;
-    min-width:300px;
+    width:33%;
     overflow-x: hidden;
     padding: 5px;
-    margin:auto;
-    display: inline-grid;
+    margin:5px;
+    display: inline-block;
     box-shadow: 0px 0px 10px 0px black;
 }
 #products .product_container .item img{
@@ -538,8 +536,7 @@ iframe{
 }
 .fullitems{
     display: flex;
-    margin:20px;
-    flex-wrap:wrap-reverse;
+    margin:20px
 }
 
 .superfont{
@@ -573,7 +570,7 @@ iframe{
     font-style: oblique;
 }
 #blogDetails{
-    width:400px;
+    width:70%;
 }
 #blogContent{
     text-align: center;
