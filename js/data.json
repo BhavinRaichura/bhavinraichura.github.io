@@ -3,8 +3,8 @@
         "title":"Education",
         "val":[
             {
-                "name":"B.Tech. in Biomedical Engineering | NATIONAL INSTITUTE OF TECHNOLOGY RAIPUR, India",
-                "status":"Start: July 2019 | End: Running"
+                "name":"B.Tech. in Biomedical Engineering | National Intitute of Technology Raipur, India",
+                "status":"Start: 2019 | End: 2023"
             },
             {   
                 "name":"12th  | M. R. Sapre Hr. N N Sec. School, Raipur, CG, India",
@@ -27,13 +27,13 @@
         ]
     },
 
-    {
+    /*{
         "title":"Experience",
-        "val":["Web Development Intern | 1stop.ai | Period : 3 months"]
-    },
+        "val":["Web Development Intern | 1stop.ai | Period : 2 months"]
+    },*/
     {
         "title":"Projects",
-        "val":["<h3>Math Tree</h3> It is a web application that helps you to solve problems based on numerical methods. This includes the Bisection method, the Newton Raphson method, and the false position method.<br>Link: <a href='https://math-tree.herokuapp.com/'>https://math-tree.herokuapp.com/</a>"]
+        "val":["<h3>Math Tree</h3> This is a web application that helps you to solve problems based on numerical methods. This includes the Bisection method, the Newton Raphson method, and the false position method.<br>Link: <a href='https://math-tree.herokuapp.com/'>https://math-tree.herokuapp.com/</a>"]
     },
 
     {
