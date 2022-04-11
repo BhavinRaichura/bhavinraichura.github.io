@@ -1,5 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
+*{
+    font-family: 'Righteous';
+}
 .text {
     width: 100%;
     height: 100%;
