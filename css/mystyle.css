@@ -25,7 +25,8 @@
 }
 
 p {
-    font-family: 'Caveat', cursive;
+    /*font-family: 'Caveat', cursive;*/
+    font-family: 'Righteous';
     color: transparent;
     font-size: 5vmax;
     letter-spacing: 5px;
