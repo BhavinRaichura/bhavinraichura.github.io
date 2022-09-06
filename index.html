@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bhavin Raichura's Portfolio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -23,11 +23,33 @@
         *{
           /*  font-family: 'Julius Sans One', sans-serif;*/
             font-family: 'Quicksand', sans-serif;
+            color: white;
+            
+        }
+
+        .bg-sec-color{
+            background-color: #1a1d20;
+            padding: 2px;
+            
+        }
+
+        
+
+        iframe{
+            border-radius: 10px;
+            border: 2px solid #1a1d20;
         }
 
         .sec-title{
             font-weight: 900;
+            color: rgb(255, 174, 0);
+            
         }
+        .sm-t-c, .sm-t-c li{
+            color: #aeaeae;
+            margin-top:5px;
+        }
+        
 
         .fimp{
             font-family: 'Julius Sans One', sans-serif;
@@ -80,26 +102,25 @@
             z-index: 99;
           }
         .link-b{
-            color: rgb(92, 92, 92);
+            color: rgb(164, 164, 164);
         }
         .link-b:hover{
-            color:rgb(23, 23, 23);
+            color:rgb(255, 255, 255);
         }
     </style>
 
 </head>
 
-<body >
+<body class="bg-dark" >
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-sec-color">
         <div class="container-fluid">
-            <a class="navbar-brand fimp" href="#">Bhavin</a>
+            <a class="navbar-brand fimp " href="#"><span class="sec-title">Bhavin</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="#skills">Skills</a>
               <a class="nav-link" href="#projects">Projects</a>
               <a class="nav-link" href="#experience">Experience</a>
@@ -117,15 +138,15 @@
         <div class="row my-2">
             <div class="col-lg-2"></div>
             <div class="col-lg-4 d-flex flex-column bd-highlight mb-3 p-3">
-                <div>
-                    <p class="text-start fs-4">Welcome to</p>
-                    <p class="text-center fs-1 fimp">Bhavin Raichura<small style="color:grey ;">'s</small></p>
-                    <p class="text-end fs-4">portfolio</p>
+                <div >
+                    <p class="text-start fs-3">Welcome to</p>
+                    <p class="text-center fs-1 fimp sec-title">Bhavin Raichura<small style="color:rgb(92, 92, 92) ;">'s</small></p>
+                    <p class="text-end fs-3">portfolio</p>
                 </div>
                 <div>
-                    <div class="d-flex flex-row bd-highlight mb-3">
-                        <div class=" bd-highlight p-1 m-2" >
-                            <div id="my-img"></div>
+                    <div class="d-flex flex-row bd-highlight mb-3 " >
+                        <div class=" bd-highlight p-1 m-2"  >
+                            <div id="my-img" style="border: 1px solid #1a1d20 ;"></div>
                         </div>
                         <div class=" bd-highlight p-1 m-2">
                             <div class="d-flex flex-column bd-highlight mb-3">
@@ -135,13 +156,13 @@
                                 <div class=" p-1 bd-highlight">
                                     <div class="d-flex flex-row bd-highlight mb-3">
                                         <div class="p-1 bd-highlight">
-                                            <a  class="link-b" href="https://www.linkedin.com/in/bhavin-raichura-93a657191/">
-                                                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                                            <a  href="https://www.linkedin.com/in/bhavin-raichura-93a657191/">
+                                                <i class="link-b fa fa-linkedin-square" style="font-size:36px"></i>
                                             </a>
                                         </div>
                                         <div class="p-1 bd-highlight">
-                                            <a class="link-b" href="https://github.com/BhavinRaichura">
-                                                <i class="fa fa-github-square" style="font-size:36px"></i>
+                                            <a  href="https://github.com/BhavinRaichura">
+                                                <i class=" link-b fa fa-github-square" style="font-size:36px;"></i>
                                             </a>
                                         </div>
                                         <div class="p-1 bd-highlight">
@@ -154,18 +175,25 @@
 
                         </div>
                     </div>
-                    <div class="p-2 bd-highlight">
-                        <p class="fs-5">Hello, my name is Bhavin Raichura. I'm a full stack developer.</p>
+                    <div>
+                        <p>
+                            <a href="https://auth.geeksforgeeks.org/user/bhavinraichura28"><img src="https://img.shields.io/badge/geeks%20for%20geeks-242222?style=plastic&logo=geeksforgeeks" alt="geeksforgeeks"></a>
+                            <a href="https://leetcode.com/bhavinraichura28/"><img src="https://img.shields.io/badge/leetcode-242222?style=plastic&logo=leetcode" alt="leetcode"></a>
+                        </p>
+                    </div>
+                    <div class="p-3 bd-highlight bg-sec-color" style="border-radius:10px;">
+                        <p >Hello, my name is Bhavin Raichura. I'm a full stack developer.</p>
+                        
                     </div>
                 </div>
             </div>
             <!---college details--->
             <div class="col-lg-4 img-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./image/national-institute-of-technology-bastar-national-institute-of-technology-2.jpg');">
                 
-                <div class="img-text">
+                <div class="img-text ">
                     <h1> <i> Eduction</i></h1>
                     <p class="p-2">University: <br>National Institute of Technology Raipur, India</p>
-                    <p class="p-2">Degree: <br>Bachlor of Technology</p>
+                    <p class="p-2">Degree: <br>Bachlor of Technology 2019-2023</p>
                     <p class="p-2">Major: <br>Biomedial Engineering</p>     
                 </div>
                 
@@ -185,12 +213,12 @@
             <p class="text-center fs-1 sec-title">Skills</p>
         </div>
         <div class="row my-3">
-            <div class="col-sm-3 "></div>
-            <div class="col-sm-2  ">
+            <div class="col-md-3 "></div>
+            <div class="col-md-2  ">
 
-                <div class="d-flex flex-row bd-highlight mb-3 text-center"></div>
+                
                     <div class=" p-2 flex-grow-1 bd-highlight text-center">
-                        <p class="fs-5">Programming Languages</p>
+                        <p class="fs-5 m-3 bg-sec-color">Programming Languages</p>
                         <ul class="list-group list-group-flush">
 
                             <li class ="list-dec">
@@ -200,8 +228,8 @@
                                 <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">    
                             </li>
                         </ul>
-                        <hr>
-                        <p class="fs-5">Database</p>
+                        
+                        <p class="fs-5 m-3 bg-sec-color">Database</p>
                         <ul class="list-group list-group-flush ">
                             <li class ="list-dec">
                                 <img src="https://img.shields.io/badge/MongoDB-3c8114?style=for-the-badge&logo=MongoDB&logoColor=white" alt="MongoDB">
@@ -213,13 +241,13 @@
                                 <img src="https://img.shields.io/badge/MySQL-f3f1ef?&style=for-the-badge&logo=mysql&logoColor=blue" alt="MySQL">
                             </li>
                         </ul>
-                        <hr>
+                        
                         
                     </div>
             </div>
-            <div class="col-sm-2  ">
+            <div class="col-md-2  ">
                     <div class="p-2 flex-grow-1 bd-highlight text-center">
-                        <p class="fs-5">Front-end</p>
+                        <p class="fs-5 m-3 bg-sec-color">Front-end</p>
                         <ul class="list-group list-group-flush">
                             <li class ="list-dec">
                                 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
@@ -234,8 +262,8 @@
                                 <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
                             </li>
                         </ul>
-                        <hr>
-                        <p class="fs-5">Backend</p>
+                        
+                        <p class="fs-5 m-3 bg-sec-color">Backend</p>
                         <ul class="list-group list-group-flush ">
                             <li class ="list-dec">
                                 <img src="https://img.shields.io/badge/Flask-010101?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
@@ -247,12 +275,12 @@
                                 <img src="https://img.shields.io/badge/JSON-515966?style=for-the-badge&logo=json&logoColor=white" alt="JSON">
                             </li>
                         </ul>
-                        <hr>
+                        
                     </div>
             </div>
-            <div class="col-sm-2  ">
+            <div class="col-md-2  ">
                     <div class="p-2 flex-grow-1 bd-highlight text-center">
-                        <p class="fs-5">Tools</p>
+                        <p class="fs-5 m-3 bg-sec-color">Tools</p>
                         <ul class="list-group list-group-flush ">
                             <li class ="list-dec">
                                 <img src="https://img.shields.io/badge/Selenium-3a697e?style=for-the-badge&logo=Selenium&logoColor=white" alt="Selenium">
@@ -274,12 +302,14 @@
                             </li>
                             
                         </ul>
-                        <hr>
+                        <p class="fs-5 m-3 bg-sec-color">Data Structure</p>
+                        <p class="fs-5 m-3 bg-sec-color">Web Scraping</p>
+                        
                     </div>
             </div>
 
             
-            <div class="col-sm-3"></div>
+            <div class="col-md-3"></div>
         </div>
     </div>
 
@@ -297,29 +327,30 @@
         <!---- proj -1 ---->
         <div class="row my-3">
             <div class="col-lg-1"></div>
-            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3">
+            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3 ">
                 <p class=" fs-2 sticker">
                     Engineering Maths Solver
                 </p>
             </div>
 
-            <div class="col-lg-6 d-flex flex-column bd-highlight mb-3 border-start">
-                <p class="fs-5"><strong> Math-Tree</strong> <a class="link-b" href="https://github.com/BhavinRaichura"><i class="fa fa-github" style="font-size:30px"></i></a></p>
-                <p>It helps you to calculate complete step-by-step solutions to problems based on Bisection Method, Newton Raphson Method and False Position Method
+            <div class="col-lg-6 d-flex flex-column bd-highlight mb-3 border-start" >
+                <p class="fs-4"><strong> Math-Tree</strong> <a  href="https://math-tree.herokuapp.com/" target="_blank"><i class="link-b fa fa-github" style="font-size:30px"></i></a></p>
+                <p >It helps you to calculate complete step-by-step solutions to problems based on Bisection Method, Newton Raphson Method and False Position Method
                 </p>
                 
                 <iframe class="m-3" src="https://math-tree.herokuapp.com/bisectionMethod" height="400px"  frameborder="1"></iframe>
                 
-                <div>
+                <div class="sm-t-c">
+                    <p>Features</p>
                     <ul>
-                            
+                        
                         <li>Backend script is written in Python and Flask</li>
                         <li>Frontend-HTML, CSS, JavaScript and Jinja2 Templat</li>
                         <li>Engineering mathematics and Iterative Solving approach</li>
                         
                     </ul>
                 </div>
-
+                <p>Tools</p>
                 <div class="d-flex flex-wrap bd-highlight mb-3 ">
                     
                     <li class ="list-dec">
@@ -358,21 +389,22 @@
         <!---- proj -2 ---->
         <div class="row my-3">
             <div class="col-lg-1"></div>
-            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3">
+            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3 ">
                 <p class=" fs-2 sticker">
                     Real-time Patient Monitoring and Consultation System
                 </p>
             </div>
             <div class="col-lg-6 d-flex flex-column bd-highlight mb-3 border-start">
-                <p class="fs-5"><strong> TMCS </strong><a class="link-b" href="https://github.com/BhavinRaichura"><i class="fa fa-github" style="font-size:30px"></i></a></p>
+                <p class="fs-4"><strong> TMCS </strong><a href="https://github.com/BhavinRaichura" target="_blank"><i class="link-b fa fa-github" style="font-size:30px"></i></a></p>
                 
-                <p>It will virtually create a conferencing room for the doctor and the patient.
+                <p >It will virtually create a conferencing room for the doctor and the patient.
                     With the help of this app patient can send live vital to doctor anytime anywhere where doctor can
                     Analyze and prescribe medicine. This app can to some extent eliminate the need to visit the doctor just for routine tests and can be very helpful for patients who need more regular tests and consultations.
                 </p>
-            
-                <div>
+                <div class="sm-t-c">
+                    <p>Features</p>
                     <ul>
+                        
                         <li>Video conferencing between Patient and Doctor</li>
                         <li>Taking patient vital data(Temperature, Heart Rate and Blood pressure) using arduino</li>
                         <li>Serial communication between arduino and patient's laptop</li>
@@ -383,6 +415,8 @@
                         
                     </ul>
                 </div>
+
+                <p>Tools</p>
 
                 <div class="d-flex flex-wrap bd-highlight mb-3 ">
                     
@@ -429,19 +463,20 @@
                 </p>
             </div>
             <div class="col-lg-6 d-flex flex-column bd-highlight mb-3 border-start">
-                <p class="fs-5"> <strong>Hash.me</strong> <a class="link-b" href="https://github.com/BhavinRaichura"><i class="fa fa-github" style="font-size:30px"></i></a></p>
-                <p>This web application can be used to convert long url to short url.This</p>
-                <div>
-                    <ul>
-                        <li>User register, login and authenticate system</li>
-                        <li>Rest-API Calls</li>
-                        <li>wtrf form security</li>
-                        <li>MongoDB database system</li>
-                        <li>Jinja2 Template</li>
+                <p class="fs-4"> <strong>Hash.me</strong> <a href="https://github.com/BhavinRaichura/URL_Shortner" target="_blank"><i class="link-b fa fa-github" style="font-size:30px"></i></a></p>
+                <p >This web application can be used to convert long url to short url.This</p>
+                <div class="sm-t-c" >
+                    <p>Features</p>
+                    <ul >
+                        <li >User register, login and authenticate system</li>
+                        <li >Rest-API Calls</li>
+                        <li >wtrf form security</li>
+                        <li >MongoDB database system</li>
+                        <li >Jinja2 Template</li>
                         
                     </ul>
                 </div>
-
+                <p>Tools</p>
                 <div class="d-flex flex-wrap bd-highlight mb-3 ">
                     
                     <li class ="list-dec">
@@ -482,8 +517,9 @@
 
         <div class="row my-3">
             <div class="col-lg-3 d-flex flex-column bd-highlight mb-3"></div>
+
             <div class="col-lg-3 d-flex flex-column bd-highlight mb-3">
-                <div class="card">
+                <div class="card bg-sec-color"> <!--style="border:0.5px solid rgb(129, 129, 129);"-->
                     <div class="card-body">
                         <h5 class="card-title">
                             <strong>Web Developer Intern</strong>
@@ -495,8 +531,8 @@
                 </div>
             </div>
             
-            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3">
-                <div class="card">
+            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3 ">
+                <div class="card bg-sec-color" >
                     <div class="card-body">
                         <h5 class="card-title">
                             <strong>Web Development Training</strong>
@@ -515,8 +551,10 @@
     </div>
 </div>
 
+
     <!----footer--->
-    <div class="container-fluid sec bg-light" id="contact">
+    <div class="container-fluid sec bg-sec-color" id="contact">
+        
         <div class="row my-3">
             <p class="text-center fs-1 sec-title">Contact</p>
         </div>
@@ -533,18 +571,18 @@
                         <div class=" p-1 bd-highlight">
                             <div class="d-flex flex-row bd-highlight mb-3  justify-content-center" >
                                 <div class="p-1 bd-highlight">
-                                    <a  class="link-b" href="https://www.linkedin.com/in/bhavin-raichura-93a657191/">
-                                        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                                    <a  href="https://www.linkedin.com/in/bhavin-raichura-93a657191/" target="_blank">
+                                        <i class=" link-b fa fa-linkedin-square" style="font-size:36px"></i>
                                     </a>
                                 </div>
                                 <div class="p-1 bd-highlight">
-                                    <a class="link-b" href="https://github.com/BhavinRaichura">
-                                        <i class="fa fa-github-square" style="font-size:36px"></i>
+                                    <a  href="https://github.com/BhavinRaichura" target="_blank">
+                                        <i class="link-b fa fa-github-square" style="font-size:36px"></i>
                                     </a>
                                 </div>
                                 
-                                <div class="p-1 bd-highlight">
-                                    <a class="btn btn-outline-secondary" href="./resume/resume.pdf">Resume</a>
+                                <div class=" p-1 bd-highlight">
+                                    <a class="btn btn-outline-secondary" href="./resume/resume.pdf" target="_blank">Resume</a>
                                 </div>
                             </div>
                         </div>
@@ -555,7 +593,6 @@
                 </div>
             
         </div>
-
 
 </body>
 
