@@ -5,87 +5,556 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhavin Raichura</title>
-    <link rel="stylesheet" href="css/mystyle.css">
-    <link rel="stylesheet" href="css/background.css">
-    <script src="js/navigator.js"></script>
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Quicksand&display=swap" rel="stylesheet"> 
+
     <style>
-/* @import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
-*{
-    font-family: 'Righteous';
-}*/
-        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
         *{
-            font-family: 'Comfortaa', cursive;
+          /*  font-family: 'Julius Sans One', sans-serif;*/
+            font-family: 'Quicksand', sans-serif;
         }
-        .profile img {
-            width: 14vmax;
-            height: 14vmax;
+
+        .sec-title{
+            font-weight: 900;
+        }
+
+        .fimp{
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: 900;
+        }
+
+        body{
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+        }
+        .sticker {
+            position: sticky;
+            top: 0;
+            text-align: right;
+            padding: 10px;
+            font-weight: 100;
+        }
+        #my-img{
+            border: 2px solid black;
             border-radius: 100%;
-            position: relative;
-            top:5%;
+            width:100px;
+            height:100px;
+            background-image: url('./image/dp.jpeg');
+            background-size: cover;
+        }
+        .bgnr{
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .sec{
+            padding:50px 10px;
+        }
+        .list-dec{
+            margin:3px;
+            list-style: none;
+        }
+        .img-slider {
+            padding: 10px ;
+            border-radius: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             
-
-        }
+            
+          }
         
-
-        #id1 p,
-        #id2 p {
-            display: inline;
+          
+        .img-text {
+            padding: 40px 20px;
+            color: white;
+            z-index: 99;
+          }
+        .link-b{
+            color: rgb(92, 92, 92);
         }
-
-        .main {
-            background-color: rgba(44, 42, 42, 0.397);
-            overflow-x: hidden;
-            margin: 20vmin auto;
-            border-radius: 30px;
-            padding: 10%;
-            width: 80%;
-        }
-
-        @media screen and (max-width:700px) {
-
-            .main {
-                width: 90%;
-                padding: 5%;
-                padding-top: 10%;
-            }
-
-        }
-
-        @media screen and (min-width:700px) {
-            .main {
-                width: 50%;
-                padding: 10%;
-
-            }
+        .link-b:hover{
+            color:rgb(23, 23, 23);
         }
     </style>
 
 </head>
 
-<body>
+<body >
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fimp" href="#">Bhavin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#experience">Experience</a>
+              <a class="nav-link" href="#contact">Contact</a>
+              <a class=" navbar-text " href="./resume/resume.pdf" target="_blank">Resume</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-    <script src="js/navigator.js"></script>
+<div class="px-4">
+    <!---home-->
 
-    <div class="main">
-        <div class="text" data-aos="zoom-in-up" data-aos-duration="1500">
-           <!--- <div class="profile"><img src="image/dp.jpg" alt="profile picture"></div> --->
-            <div class='item' id="id1">
-                <p>Hello</p>
-                <p><a href="about.html">About</a></p>
+    <div class="container-fluid sec">
+        <div class="row my-2">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4 d-flex flex-column bd-highlight mb-3 p-3">
+                <div>
+                    <p class="text-start fs-4">Welcome to</p>
+                    <p class="text-center fs-1 fimp">Bhavin Raichura<small style="color:grey ;">'s</small></p>
+                    <p class="text-end fs-4">portfolio</p>
+                </div>
+                <div>
+                    <div class="d-flex flex-row bd-highlight mb-3">
+                        <div class=" bd-highlight p-1 m-2" >
+                            <div id="my-img"></div>
+                        </div>
+                        <div class=" bd-highlight p-1 m-2">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class=" bd-highlight">
+                                    <p class="fs-5"><a href="mailto:bhavinraichura28@gmail.com">@Bhavin</a></p>
+                                </div>
+                                <div class=" p-1 bd-highlight">
+                                    <div class="d-flex flex-row bd-highlight mb-3">
+                                        <div class="p-1 bd-highlight">
+                                            <a  class="link-b" href="https://www.linkedin.com/in/bhavin-raichura-93a657191/">
+                                                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                                            </a>
+                                        </div>
+                                        <div class="p-1 bd-highlight">
+                                            <a class="link-b" href="https://github.com/BhavinRaichura">
+                                                <i class="fa fa-github-square" style="font-size:36px"></i>
+                                            </a>
+                                        </div>
+                                        <div class="p-1 bd-highlight">
+                                            <a class="btn btn-outline-secondary" href="./resume/resume.pdf">Resume</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <p class="fs-5">Hello, my name is Bhavin Raichura. I'm a full stack developer.</p>
+                    </div>
+                </div>
             </div>
-            <div class='item' id="id2">
-                <p>I am</p>
-                <p><a href="work.html">Work</a></p>
+            <!---college details--->
+            <div class="col-lg-4 img-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./image/national-institute-of-technology-bastar-national-institute-of-technology-2.jpg');">
+                
+                <div class="img-text">
+                    <h1> <i> Eduction</i></h1>
+                    <p class="p-2">University: <br>National Institute of Technology Raipur, India</p>
+                    <p class="p-2">Degree: <br>Bachlor of Technology</p>
+                    <p class="p-2">Major: <br>Biomedial Engineering</p>     
+                </div>
+                
             </div>
-            <div class='item' id="id3">
-                <p>Bhavin</p>
-                <p><a href="contact.html">Contact</a></p>
-            </div>
+
+            <div class="col-lg-2"></div>
         </div>
     </div>
+
+
+    
+
+    <!---skills---->
+
+    <div class="container-fluid sec" id="skills">
+        <div class="row my-3">
+            <p class="text-center fs-1 sec-title">Skills</p>
+        </div>
+        <div class="row my-3">
+            <div class="col-sm-3 "></div>
+            <div class="col-sm-2  ">
+
+                <div class="d-flex flex-row bd-highlight mb-3 text-center"></div>
+                    <div class=" p-2 flex-grow-1 bd-highlight text-center">
+                        <p class="fs-5">Programming Languages</p>
+                        <ul class="list-group list-group-flush">
+
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/Python-ffa005?style=for-the-badge&logo=python&logoColor=306998"  alt="Python">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">    
+                            </li>
+                        </ul>
+                        <hr>
+                        <p class="fs-5">Database</p>
+                        <ul class="list-group list-group-flush ">
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/MongoDB-3c8114?style=for-the-badge&logo=MongoDB&logoColor=white" alt="MongoDB">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/SQLite-326CC7?style=for-the-badge&logo=SQLite&logoColor=white" alt="SQLite">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/MySQL-f3f1ef?&style=for-the-badge&logo=mysql&logoColor=blue" alt="MySQL">
+                            </li>
+                        </ul>
+                        <hr>
+                        
+                    </div>
+            </div>
+            <div class="col-sm-2  ">
+                    <div class="p-2 flex-grow-1 bd-highlight text-center">
+                        <p class="fs-5">Front-end</p>
+                        <ul class="list-group list-group-flush">
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+                            </li>
+                        </ul>
+                        <hr>
+                        <p class="fs-5">Backend</p>
+                        <ul class="list-group list-group-flush ">
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/Flask-010101?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/Socketio-grey?&style=for-the-badge&logo=socket&logoColor=grey" alt="SocketIo">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/JSON-515966?style=for-the-badge&logo=json&logoColor=white" alt="JSON">
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+            </div>
+            <div class="col-sm-2  ">
+                    <div class="p-2 flex-grow-1 bd-highlight text-center">
+                        <p class="fs-5">Tools</p>
+                        <ul class="list-group list-group-flush ">
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/Selenium-3a697e?style=for-the-badge&logo=Selenium&logoColor=white" alt="Selenium">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/pandas-c9c9bd?style=for-the-badge&logo=Pandas&logoColor=2b0c09" alt="Pandas">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma">
+                            </li>
+                            <li class ="list-dec">
+                                <img src="https://img.shields.io/badge/Jupyter_Notebook-fc9913?&style=for-the-badge&logo=Jupyter&logoColor=black" alt="Jupyter Notebook">
+                            </li>
+                            
+                        </ul>
+                        <hr>
+                    </div>
+            </div>
+
+            
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <!----projects--->
+
+    <div class="container-fluid sec" id="projects">
+        <div class="row my-3">
+            <p class="text-center fs-1 sec-title">Projects</p>
+        </div>
+
+        <!---- proj -1 ---->
+        <div class="row my-3">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3">
+                <p class=" fs-2 sticker">
+                    Engineering Maths Solver
+                </p>
+            </div>
+
+            <div class="col-lg-6 d-flex flex-column bd-highlight mb-3 border-start">
+                <p class="fs-5"><strong> Math-Tree</strong> <a class="link-b" href="https://github.com/BhavinRaichura"><i class="fa fa-github" style="font-size:30px"></i></a></p>
+                <p>It helps you to calculate complete step-by-step solutions to problems based on Bisection Method, Newton Raphson Method and False Position Method
+                </p>
+                
+                <iframe class="m-3" src="https://math-tree.herokuapp.com/bisectionMethod" height="400px"  frameborder="1"></iframe>
+                
+                <div>
+                    <ul>
+                            
+                        <li>Backend script is written in Python and Flask</li>
+                        <li>Frontend-HTML, CSS, JavaScript and Jinja2 Templat</li>
+                        <li>Engineering mathematics and Iterative Solving approach</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-wrap bd-highlight mb-3 ">
+                    
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/Flask-010101?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+                    </li>
+                    
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/JSON-515966?style=for-the-badge&logo=json&logoColor=white" alt="JSON">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku">
+                    </li>
+                        
+                        
+                    
+                    
+                </div>
+            </div>
+            <div class="col-lg-2 d-flex flex-column bd-highlight mb-3"></div>
+            
+        </div>
+
+
+        <!---- proj -2 ---->
+        <div class="row my-3">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3">
+                <p class=" fs-2 sticker">
+                    Real-time Patient Monitoring and Consultation System
+                </p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column bd-highlight mb-3 border-start">
+                <p class="fs-5"><strong> TMCS </strong><a class="link-b" href="https://github.com/BhavinRaichura"><i class="fa fa-github" style="font-size:30px"></i></a></p>
+                
+                <p>It will virtually create a conferencing room for the doctor and the patient.
+                    With the help of this app patient can send live vital to doctor anytime anywhere where doctor can
+                    Analyze and prescribe medicine. This app can to some extent eliminate the need to visit the doctor just for routine tests and can be very helpful for patients who need more regular tests and consultations.
+                </p>
+            
+                <div>
+                    <ul>
+                        <li>Video conferencing between Patient and Doctor</li>
+                        <li>Taking patient vital data(Temperature, Heart Rate and Blood pressure) using arduino</li>
+                        <li>Serial communication between arduino and patient's laptop</li>
+                        <li>Real-time Patient vital parameters sharing in tele-confenece</li>
+                        <li>Medicine recomendation system</li>
+                        <li>User login, registration and authentication system</li>
+
+                        
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-wrap bd-highlight mb-3 ">
+                    
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/Flask-010101?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/Socketio-grey?&style=for-the-badge&logo=socket&logoColor=grey" alt="SocketIo">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/MongoDB-3c8114?style=for-the-badge&logo=MongoDB&logoColor=white" alt="MongoDB">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/Arduino-00ae6f?&style=for-the-badge&logo=Arduino&logoColor=white" alt="Arduino">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                    </li>
+                    
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/JSON-515966?style=for-the-badge&logo=json&logoColor=white" alt="JSON">
+                    </li>
+                    
+                    
+                </div>
+            </div>
+            <div class="col-lg-2 d-flex flex-column bd-highlight mb-3 "></div>
+            
+        </div>
+
+
+        <!---- proj -3 ---->
+        <div class="row my-3">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3">
+                <p class=" fs-2 sticker">
+                    URL Shortener
+                </p>
+            </div>
+            <div class="col-lg-6 d-flex flex-column bd-highlight mb-3 border-start">
+                <p class="fs-5"> <strong>Hash.me</strong> <a class="link-b" href="https://github.com/BhavinRaichura"><i class="fa fa-github" style="font-size:30px"></i></a></p>
+                <p>This web application can be used to convert long url to short url.This</p>
+                <div>
+                    <ul>
+                        <li>User register, login and authenticate system</li>
+                        <li>Rest-API Calls</li>
+                        <li>wtrf form security</li>
+                        <li>MongoDB database system</li>
+                        <li>Jinja2 Template</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-wrap bd-highlight mb-3 ">
+                    
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/Flask-010101?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/MongoDB-3c8114?style=for-the-badge&logo=MongoDB&logoColor=white" alt="MongoDB">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                    </li>
+                    <li class ="list-dec">
+                        <img src="https://img.shields.io/badge/JSON-515966?style=for-the-badge&logo=json&logoColor=white" alt="JSON">
+                    </li>
+                    
+                    
+                </div>
+            </div>
+            <div class="col-lg-2 d-flex flex-column bd-highlight mb-3 "></div>
+            
+        </div>
+
+    </div>
+
+
+    <!---experience--->
+
+    <div class="container-fluid sec" id="experience">
+        <div class="row my-3">
+            <p class="text-center fs-1 sec-title">Experience</p>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3"></div>
+            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <strong>Web Developer Intern</strong>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">At Prabhupada World</h6>
+                        <p class="card-text">One month internship at Prabhupada World in the field of Web Development from 21 April 2022 to 22 May 2022</p>
+                        <a href="#" class="card-link">Certificate</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <strong>Web Development Training</strong>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">At 1stop</h6>
+                        <p class="card-text">
+                            Two month training on Web Development at 1stop from June 2021 to August 2021. 
+                        </p>
+                        <br>
+                        <a href="https://drive.google.com/file/d/1PehZc8ymoUDjOG7rJn-8foXp_-BXuqa0/view?usp=sharing" class="card-link">Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex flex-column bd-highlight mb-3"></div>
+        </div>
+    </div>
+</div>
+
+    <!----footer--->
+    <div class="container-fluid sec bg-light" id="contact">
+        <div class="row my-3">
+            <p class="text-center fs-1 sec-title">Contact</p>
+        </div>
+        <div class="row my-3">
+
+                <div class="p-2 bd-highlight ">
+                    <div class="d-flex flex-column bd-highlight mb-3 ">
+                        <div class="p-1 bd-highlight text-center">
+                            <p>Email: <a href="mailto:bhavinraichura28@gmail.com">bhavinraichura28@gmail.com</a></p>
+                        </div>
+                        <div class="p-1 bd-highlight text-center">
+                            <p>Phone: <a href="tel:+918085129146">+91 80851 29146</a></p>
+                        </div>
+                        <div class=" p-1 bd-highlight">
+                            <div class="d-flex flex-row bd-highlight mb-3  justify-content-center" >
+                                <div class="p-1 bd-highlight">
+                                    <a  class="link-b" href="https://www.linkedin.com/in/bhavin-raichura-93a657191/">
+                                        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                                    </a>
+                                </div>
+                                <div class="p-1 bd-highlight">
+                                    <a class="link-b" href="https://github.com/BhavinRaichura">
+                                        <i class="fa fa-github-square" style="font-size:36px"></i>
+                                    </a>
+                                </div>
+                                
+                                <div class="p-1 bd-highlight">
+                                    <a class="btn btn-outline-secondary" href="./resume/resume.pdf">Resume</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+            
+        </div>
 
 
 </body>
